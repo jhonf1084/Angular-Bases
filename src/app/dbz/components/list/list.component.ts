@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
@@ -8,6 +8,7 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class ListComponent {
 
+  @Input()
   public characterList: Character[]=[{
 
     name: 'Trunks',
